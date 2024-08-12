@@ -1,0 +1,1 @@
+//obejto != JSON
