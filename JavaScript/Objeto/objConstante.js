@@ -7,6 +7,15 @@ console.log(pessoa)
 
 // executando esse codigo, mesmo o objeto sendo declarado com João, é possivel fazer a alteração mesmo sendo declarado como "constante".
 
-pessoa = {nome:'Ana'}
+//pessoa = {nome:'Ana'}
 //console.log(pessoa)
 // Se executado, essa parte do codigo vai dar erro constando pessoa como uma constante. então o que é realmente constante é o endereço de memoria apontado e não o conteudo do objetoconsole.log(pessoa)
+
+//Existem algumas formas de fazer um obj ser constante
+
+Object.freeze(pessoa)
+
+pessoa.nome ='Belle'
+pessoa.numero = '42'
+
+console.log(pessoa)
